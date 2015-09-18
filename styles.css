@@ -1,0 +1,11 @@
+
+         form {
+             height:400px;
+             width:400px;
+             position: absolute;
+             left: 50%;
+             top: 50%;
+             
+             /* Set margins to offset 50% of the w/h */
+             margin: -200px 0 0 -200px;
+         }
