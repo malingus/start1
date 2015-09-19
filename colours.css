@@ -1,0 +1,13 @@
+.outer {
+position: relative;
+height: 50px;
+ width:50px;
+}
+
+.inner {
+position: absolute;
+top:10%;
+left:0;
+height: 5px;
+width:5px;
+}
