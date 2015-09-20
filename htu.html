@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Choose your colour again</title>
+</head>
+<body>
+ <p id="qw">nothin was found</p>
+<select size = "1" id="omg"onchange= 'select(this.value)' >
+  <option value="colours">colours</option>
+  <option value="green">green</option>
+  <option value="red">red</option>
+  <option value="black">black</option>
+  <script type="text/javascript">
+  function select(value) {
+    //alert(value)
+var elem = document.getElementById('qw');
+console.log(elem);
+elem.innerHTML=value;
+	}
+</script>
+  <br /><br />
+ 
+</body>
+</html>
