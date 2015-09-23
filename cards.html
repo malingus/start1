@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Credit card</title>
+ <script type="text/javascript">
+  function displayImage(elem) {
+    var image = document.getElementById("canvas");
+    image.src = elem.value;        
+  }
+  </script>
+</head>
+</body>
+<form name="controls">
+<center>
+<img id="canvas" src="img/masc.jpg">
+    <select name="imageList" onchange="displayImage(this);">
+      <option value="img/vs.jpg">Visa</option>
+      <option value="img/aex.jpg">American Express</option>
+      </select>
+     <p id="qq">choose your card</p>
+<select size = "1" id="goq"onchange= 'select(this.value)' >
+  <option value="choose your card">credit cards</option>
+  <option value="Master Card">Master Card</option>
+  <option value="Visa">Visa</option>
+  <option value="American Express">American Express</option>
+  </select>
+  </center>
+<script type="text/javascript">
+  function select(value) {
+    //alert(value)
+	var elem = document.getElementById('qq');
+console.log(elem);
+elem.innerHTML=value;
+	}
+	</script>
+	</form>
+  </body>
+  </html>
